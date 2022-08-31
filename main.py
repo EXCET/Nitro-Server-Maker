@@ -10,7 +10,7 @@ token = os.environ['token']
 
 prefix = "+"
 
-bot = commands.Bot(command_prefix=prefix, help_command=None)
+bot = commands.Bot(command_prefix=".", intents=discord.Intents.all())
 
 @bot.command()
 async def createserver(ctx):
